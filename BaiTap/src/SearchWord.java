@@ -18,6 +18,8 @@ public class SearchWord {
                     System.out.println(tmp);
                 }
             }
+			br.close();
+			fr.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
