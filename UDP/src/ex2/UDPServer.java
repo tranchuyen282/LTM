@@ -40,7 +40,7 @@ public class UDPServer {
                 receiveData = new byte[bufferSize];
                 receivePacket = new DatagramPacket(receiveData, receiveData.length);
                 server.receive(receivePacket); 
-                //String strTemp = new String(receivePacket.getData()).trim();
+                String strTemp = new String(receivePacket.getData()).trim();
                 System.out.println("client gui len: ");
                 
                 SinhVien s = new SinhVien(34,"B16DCCN034",new Float(9.5),"");

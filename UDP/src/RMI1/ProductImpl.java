@@ -8,8 +8,7 @@ import java.lang.*;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-public class ProductImpl extends UnicastRemoteObject implements IProduct{
-    private static final long serialVersionUID = 20151107;
+public class ProductImpl extends UnicastRemoteObject implements IProduct{    
 
     public ProductImpl() throws RemoteException{
         super();

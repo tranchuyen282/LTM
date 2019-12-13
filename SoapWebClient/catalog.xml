@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/SoapWeb/testws?wsdl" uri="src/conf/xml-resources/web-service-references/testws/wsdl/localhost_8080/SoapWeb/testws.wsdl"/>
+    <system systemId="http://localhost:8080/SoapWeb/testws?xsd=1" uri="src/conf/xml-resources/web-service-references/testws/wsdl/localhost_8080/SoapWeb/testws.xsd_1.xsd"/>
+</catalog>
