@@ -1,0 +1,19 @@
+public class ViecTinhLuongDAO extends DAO{
+
+    public ViecTinhLuongDAO) {
+        getInstance();
+    }
+	public int luuLuong (ViecTinhLuong vlt){
+			
+			
+			try {     
+				// Câu lệnh sql lưu lương vào CSDL
+				// thực hiện câu lệnh
+				// lấy dữ liệu trả về   
+			} catch (SQLException ex) {
+				Logger.getLogger(ViecTinhLuongDAO.class.getName()).log(Level.SEVERE, null, ex);
+			}
+			
+			return dsCICO;
+	}
+}
