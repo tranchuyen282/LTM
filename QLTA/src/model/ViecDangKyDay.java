@@ -7,62 +7,67 @@ import java.util.*;
 import java.lang.*;
 
 public class ViecDangKyDay {
-    private Date ngayDangKy;
-    private Double luong;
-    private LopHoc lopHoc;
+    private int id;
     private GiangVien giangVien;
-    private NhanVien nhanVien;
+    private MonHoc monHoc;
+    private ArrayList<LopHocPhan> dslopHocPhan;
+    private Date thoiGianDK;
 
     public ViecDangKyDay() {
     }
 
-    public ViecDangKyDay(Date ngayDangKy, Double luong, LopHoc lopHoc, GiangVien giangVien, NhanVien nhanVien) {
-        this.ngayDangKy = ngayDangKy;
-        this.luong = luong;
-        this.lopHoc = lopHoc;
+    public ViecDangKyDay(int id, GiangVien giangVien, MonHoc monHoc, ArrayList<LopHocPhan> dslopHocPhan, Date thoiGianDK) {
+        this.id = id;
         this.giangVien = giangVien;
-        this.nhanVien = nhanVien;
+        this.monHoc = monHoc;
+        this.dslopHocPhan = dslopHocPhan;
+        this.thoiGianDK = thoiGianDK;
     }
 
-    public void setNhanVien(NhanVien nhanVien) {
-        this.nhanVien = nhanVien;
+    public int getId() {
+        return id;
     }
 
-    public NhanVien getNhanVien() {
-        return nhanVien;
-    }
-
-    public Date getNgayDangKy() {
-        return ngayDangKy;
-    }
-
-    public Double getLuong() {
-        return luong;
-    }
-
-    public LopHoc getLopHoc() {
-        return lopHoc;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public GiangVien getGiangVien() {
         return giangVien;
     }
 
-    public void setNgayDangKy(Date ngayDangKy) {
-        this.ngayDangKy = ngayDangKy;
-    }
-
-    public void setLuong(Double luong) {
-        this.luong = luong;
-    }
-
-    public void setLopHoc(LopHoc lopHoc) {
-        this.lopHoc = lopHoc;
-    }
-
     public void setGiangVien(GiangVien giangVien) {
         this.giangVien = giangVien;
     }
-    
+
+    public MonHoc getMonHoc() {
+        return monHoc;
+    }
+
+    public void setMonHoc(MonHoc monHoc) {
+        this.monHoc = monHoc;
+    }
+
+    public ArrayList<LopHocPhan> getDslopHocPhan() {
+        return dslopHocPhan;
+    }
+
+    public void setDslopHocPhan(ArrayList<LopHocPhan> dslopHocPhan) {
+        this.dslopHocPhan = dslopHocPhan;
+    }
+
+    public Date getThoiGianDK() {
+        return thoiGianDK;
+    }
+
+    public void setThoiGianDK(Date thoiGianDK) {
+        this.thoiGianDK = thoiGianDK;
+    }
+
+    @Override
+    public String toString() {
+        return "ViecDangKyDay{" + "id=" + id + ", giangVien=" + giangVien + ", monHoc=" + monHoc + ", dslopHocPhan=" + dslopHocPhan + ", thoiGianDK=" + thoiGianDK + '}';
+    }
+       
     
 }

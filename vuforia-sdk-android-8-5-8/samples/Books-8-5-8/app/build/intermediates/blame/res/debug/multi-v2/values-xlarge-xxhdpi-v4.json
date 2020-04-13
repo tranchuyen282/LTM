@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Android\\vuforia-sdk-android-8-5-8\\samples\\Books-8-5-8\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-xxhdpi-v4\\values-xlarge-xxhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "E:\\Android\\vuforia-sdk-android-8-5-8\\samples\\Books-8-5-8\\app\\src\\main\\res\\values-xlarge-xxhdpi\\dimens.xml",
+                    "from": {
+                        "startLines": "12,13,4,6,8,9,5,10,3,7",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "451,493,101,198,300,353,147,404,56,247",
+                        "endColumns": "41,49,45,48,52,50,50,45,44,52",
+                        "endOffsets": "488,538,142,242,348,399,193,445,96,295"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,97,147,193,242,295,346,397,443,488",
+                        "endColumns": "41,49,45,48,52,50,50,45,44,52",
+                        "endOffsets": "92,142,188,237,290,341,392,438,483,536"
+                    }
+                }
+            ]
+        }
+    ]
+}

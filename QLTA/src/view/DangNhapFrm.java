@@ -7,12 +7,12 @@
  */
 package view;
 
-import controller.DangNhapControl;
+import controller.DangNhapDAO;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import static javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE;
-import model.NhanVien;
+import model.GiangVien;
 
 /**
  *
@@ -166,16 +166,19 @@ public class DangNhapFrm extends javax.swing.JFrame {
     private void jbtnDangNhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnDangNhapActionPerformed
          //TODO add your handling code here:
         if(txtTenDangNhap.getText().length() > 0 && txtMatKhau.getText().length()>0){
-            DangNhapControl dn = new DangNhapControl();
-            NhanVien taiKhoan = getTaiKhoan();
-            int id = dn.checkDangNhap(taiKhoan);
+            DangNhapDAO dn = new DangNhapDAO();
+            GiangVien giangVien = new GiangVien();
+            giangVien.setPass(txtMatKhau.getText().toString());
+            giangVien.setUser(txtTenDangNhap.getText().toString());
+            int id = dn.checkDangNhap(giangVien);
             if( id == 0){
                 thongBaoDangNhap("Sai thông tin đăng nhập");
             }
             else{
                 thongBaoDangNhap("Đăng nhập thành công");
                 this.dispose();
-                VanHanhFrm vh = new VanHanhFrm(id);
+                giangVien.setId(id);
+                GiangVienFrm vh = new GiangVienFrm(giangVien);
                 vh.setVisible(true);
                 vh.setLocationRelativeTo(null);
             }
@@ -201,10 +204,7 @@ public class DangNhapFrm extends javax.swing.JFrame {
         }
     }
     
-    public NhanVien getTaiKhoan(){
-        NhanVien taiKhoan = new NhanVien(0, "", txtTenDangNhap.getText().toString(), txtMatKhau.getText().toString(), "");
-        return taiKhoan;
-    }
+   
     
     public void thongBaoDangNhap(String s){
         JOptionPane.showMessageDialog(this, s);

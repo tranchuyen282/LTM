@@ -1,0 +1,4 @@
+#Fri Nov 29 17:38:57 ICT 2019
+base.0=E\:\\Android\\vuforia-sdk-android-8-5-8\\samples\\VuforiaSamples-8-5-8\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+path.0=classes.dex
+renamed.0=classes.dex
